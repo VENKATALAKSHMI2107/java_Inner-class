@@ -1,1 +1,14 @@
-# java_Inner-class
+class Car{
+    static class Engine{
+        void Start(){
+            System.out.println("engine has started");
+
+        }
+    }
+}
+class Test{
+    public static void main(String[] args) {
+        Car.Engine e=new Car.Engine();
+        e.Start();
+    }
+}
