@@ -1,1 +1,18 @@
+abstract class vehicle 
+{
+	abstract void run();
+}
 
+class user
+{
+	public static void main(String[]args){
+	vehicle v=new vehicle() {
+	void run(){
+		System.out.println("bike is running");
+	
+	}
+	};
+	v.run();
+	
+	}
+}
