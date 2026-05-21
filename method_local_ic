@@ -1,1 +1,40 @@
+interface message
+{
+	void send();
+}
+class Bank 
+{
+	
+ class Account
+	{
+		void open(){
+			System.out.println("account is opened");
+		}
+	
+	}
 
+void loan(){
+	class loan
+	{
+		void approve()
+		{
+			System.out.println("losn approved");
+		}
+	}
+	loan l=new loan();
+	l.approve();
+}
+public static  void main(String[]args)
+	{
+	Bank b=new Bank();
+	Bank.Account a=b.new Account();
+	a.open();
+	b.loan();
+	message m=new message() {
+		public void send(){
+			System.out.println("message sent...");
+		}
+	};
+	m.send();
+	}
+}
